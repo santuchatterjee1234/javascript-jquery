@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+</title>
+</head>
+
+<body>
+
+    <button type="button" onClick="myFunction()">Click me</button>
+    <p>Clicks: <a id="demo">0</a></p>
+    <script type="text/javascript">
+        // logic 1
+        let count = 0;
+        function myFunction(){
+            count = count+1;
+            document.getElementById("demo").innerHTML = count;
+            document.getElementById("demo").style.color = "red";
+        }
+        // logic-2
+        // let count = 0;
+        // function myFunction(){
+        //     let click = count+1;
+        //     document.getElementById("demo").innerHTML = click;
+        //     count++;
+        // }
+    </script>
+</body>
+
+</html>

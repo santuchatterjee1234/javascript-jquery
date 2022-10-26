@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  </head>
+    <body>
+        <ul>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+            <li>Five</li>
+        </ul>
+        <script type="text/javascript">
+            var tag = document.getElementsByTagName('li');
+                for(var i=0; i<tag.length; i++){
+                    tag[i].style.backgroundColor = "#f4f4f4";
+                    tag[i].style.color = "blue";
+                    tag[i].style.fontWeight = "bold";
+                    tag[i].style.listStyleType = "none";
+                    tag[i].style.width = "100px";
+                }
+        </script>
+    </body>
+</html>

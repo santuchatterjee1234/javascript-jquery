@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+     
+<head>
+    <title>on-change event</title>
+</head>
+ 
+<body>
+    <h2>Javascript on-change Event Function</h2>
+     
+    <div>
+        num1: <input type="number" id="number1" value="1"  onchange="myFunction(this)"/>
+        <br><br>
+         
+        num2: <input type="number" id="number2" value="1"  onchange="myFunction(this)"/>
+        <br><br/>
+        <b style="float:left;">Result:</b> <span id="result">1</span>
+    </div>
+     
+    <script>
+        function myFunction(){
+            let num1 = document.getElementById("number1").value;
+            let num2 = document.getElementById("number2").value;
+            document.getElementById("result").innerHTML= num1*num2;
+
+        }
+    </script>
+</body>
+ 
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+     
+<head>
+    <title>on-change event</title>
+</head>
+ 
+<body>
+    <h2>Javascript on-Keyup Event Function</h2>
+     
+    <div>
+        num1: <input type="text" id="number1" value="1"  onkeyup="myFunction()"/>
+        <br><br>
+         
+        num2: <input type="text" id="number2" value="1"  onkeyup="myFunction()"/>
+        <br><br/>
+        <b style="float:left;">Result:</b> <span id="demo">1</span>
+    </div>
+     
+    <script>
+        function myFunction(){
+            var txtFirstNo = document.getElementById('number1').value;
+            var txtSecondNo = document.getElementById('number2').value;
+            var result = parseInt(txtFirstNo) + parseInt(txtSecondNo);
+                document.getElementById('demo').innerHTML = result;
+        }
+
+        
+    </script>
+</body>
+ 
+</html>

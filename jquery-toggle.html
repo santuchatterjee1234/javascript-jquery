@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>jQuery toggle</title>
+    <style>
+      body {
+        margin: 20px;
+      }
+
+      p {
+        margin: 15px 0;
+      }
+
+      #box {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+      }
+
+      #animate{
+        display:none;
+      }
+    </style>
+
+
+  </head>
+  <body>
+    <input type="button" class="btn" value="Animate">
+    <div id="animate">
+      <p>Text to animate</p>
+      <div id="box"></div>
+    </div>
+    <script>
+      $('.btn').click(function() {
+      $('#animate').toggle('slow');
+    });
+    </script>
+  </body>
+</html>

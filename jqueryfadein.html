@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+     $(document).ready(function(){
+      $("button").click(function(){
+        $("#div1").fadeIn(2000);
+        $("#div2").fadeIn(3000);
+        $("#div3").fadeIn(4000);
+      });  
+     });
+    </script>
+    <button>Fade In</button>
+    <br/><br/>
+    <div id="div1" style="width:100px; height:100px; background: blue; display: none;"></div>
+    <div id="div2" style="width:100px; height:100px; background: green; display: none;"></div>
+    <div id="div3" style="width:100px; height:100px; background: purple; display: none;"></div>
+  </body>
+</html>
